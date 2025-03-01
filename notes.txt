@@ -1,0 +1,19 @@
+Event,White,Black,Result,UTCDate,UTCTime,WhiteElo,BlackElo,WhiteRatingDiff,BlackRatingDiff,ECO,Opening,TimeControl,Termination,AN
+
+"If we assign a white pawn a value of 1 and a black pawn a value of 2, we are essentially telling the neural net that the black pawn is twice as much of something than a white pawn"
+
+"The trick to teach neural networks to play both games is to take advantage of the fact that CNNs can process 3d input. each feature map input can encode a different type of game piece. The first feature map will represent white pawns as 1s and black pawns as 1s, the second map will record the position of white and black knights, and so on"
+
+
+e.g.
+
+pawn map:
+
+0 0 0 0 0 0 0 0
+-1 -1 -1 -1 -1 -1 -1 -1
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+1 1 1 1 1 1 1 1
+0 0 0 0 0 0 0 0
